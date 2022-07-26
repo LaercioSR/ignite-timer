@@ -39,8 +39,8 @@ export function Home() {
   const task = watch('task')
   const isSubmitDisabled = !task
 
-  function handleCreateNewCycle() {
-    createNewCycle()
+  function handleCreateNewCycle(data: NewCycleFormData) {
+    createNewCycle(data)
     reset()
   }
 
